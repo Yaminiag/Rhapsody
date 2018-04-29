@@ -1,0 +1,349 @@
+* {box-sizing:border-box}
+ *{
+      margin: 0;
+      padding: 0;
+    }
+* {font-family: candara;
+font-size: 18px;}
+.mySlides.fade{display:none
+background-color:black;
+height: 100%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  padding:0;
+  margin:0;
+  position: relative;
+
+}
+/* Caption text */
+
+
+
+.arrowleft {
+  cursor: pointer;
+  position: absolute;
+  top: 9.04%;
+  left: 0.7%;
+  color: transparent;
+  width: 20%;
+  text-align: left;
+  height: 80.4%;
+  background-color: transparent;
+  border: none;
+}
+
+.arrowright:focus, .arrowleft:focus {outline:0;}
+
+.arrowright {
+  cursor: pointer;
+  position: absolute;
+  top: 9.04%;
+  left:79.42%;
+  color: transparent;
+  width: 20%;
+  text-align: right;
+  height: 80.4%;
+  background-color: transparent;
+  border: none;
+}
+
+.arrowleft:hover, .arrowright:hover {
+  color: black;
+}
+
+/* .button {
+  border-radius: 8px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button1 {
+  padding: 10px 24px;
+  position: absolute;
+  top: 5%;
+  left: 75%;
+}
+
+.button2 {
+  padding: 10px 24px;
+  position: absolute;
+  top: 5%;
+  left: 85%;
+} */
+
+
+/* .prev {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+}
+
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 97.5%;
+} */
+
+.active {
+  background-color: black;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade ease-in;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+/*@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}*/
+
+/* header */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2b2b2b;
+}
+
+#logo {
+  float: left;
+  cursor: pointer;
+
+
+}
+li {
+    float: right;
+
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 18px 16px;
+    text-decoration: none;
+
+}
+
+li a:hover {
+    background-color: #111;
+    color: #1087cc;
+}
+
+.dropdown-content a:hover {
+    background-color: white;
+    color: #1087cc;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #2b2b2b;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #111}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.h1{color: white;}
+#rig {
+    max-width:900px;
+    margin:0 auto; /*center aligned*/
+    padding:0;
+    font-size:0; /* Remember to change it back to normal font size if have captions */
+    list-style:none;
+    background-color:#2b2b2b;
+}
+#rig li {
+    display: inline-block;
+    *display:inline;/*for IE6 - IE7*/
+    width:25%;
+    vertical-align:middle;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+/* The wrapper for each item */
+.rig-cell {
+    /*margin:12px;
+    box-shadow:0 0 6px rgba(0,0,0,0.3);*/
+    display:block;
+    position: relative;
+    overflow:hidden;
+}
+
+/* If have the image layer */
+.rig-img {
+    display:block;
+    width: 100%;
+    height: auto;
+    border:none;
+    transform:scale(1);
+    transition:all 1s;
+}
+
+#rig li:hover .rig-img {
+    transform:scale(1.05);
+}
+
+/* If have the overlay layer */
+.rig-overlay {
+    position: absolute;
+    display:block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: #1087cc url(img/link.png) no-repeat center 20%;
+    background-size:50px 50px;
+    opacity:0;
+    filter:alpha(opacity=0);/*For IE6 - IE8*/
+    transition:all 0.6s;
+}
+#rig li:hover .rig-overlay {
+    opacity:0.8;
+}
+
+/* If have captions */
+.rig-text {
+    display:block;
+    padding:0 30px;
+    box-sizing:border-box;
+    position:absolute;
+    left:0;
+    width:100%;
+    text-align:center;
+    text-transform:capitalize;
+    font-size:18px;
+    font-weight:bold;
+    font-family: 'Oswald', candara;
+    font-weight:normal!important;
+    top:40%;
+    color:white;
+    opacity:0;
+    filter:alpha(opacity=0);/*For older IE*/
+    transform:translateY(-20px);
+    transition:all .3s;
+}
+#rig li:hover .rig-text {
+    transform:translateY(0px);
+    opacity:0.9;
+}
+.rig-play{
+background-size: 50px 50px;}
+
+@media (max-width: 9000px) {
+    #rig li {
+        width:25%;
+    }
+}
+
+@media (max-width: 700px) {
+    #rig li {
+        width:33.33%;
+    }
+}
+
+@media (max-width: 550px) {
+    #rig li {
+        width:50%;
+    }
+}
+
+footer{
+   width: 100%;
+   background-color: #2b2b2b;
+   padding-top: 25px;
+   padding-bottom: 25px;
+   margin-top: -26px;
+   padding-left: 15px;
+   }
+
+
+  p{
+    width:200px;
+    text-align: left;
+    font-size:18px;
+    font-weight:bold;
+    font-family: 'Oswald', candara;
+    font-weight:normal;
+    color:white;
+    padding:6px;
+  }
+#social
+{
+margin-left: 30%;
+position: absolute;
+margin-top: -7.3%;
+
+}
+
+#soc{
+  align-content: space-between;
+  padding: 15px;
+
+}

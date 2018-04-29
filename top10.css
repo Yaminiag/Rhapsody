@@ -1,0 +1,75 @@
+body{
+  background-color: black;
+
+}
+
+#sgcontainer{
+  padding-top: 0.25%;
+  width: 70%;
+  
+  background-color: #2b2b2b;
+  //border: 0.2px solid grey;
+  margin-top: -21.7%;
+  color: white;
+  font-size: 20px;
+  font-family: candara;
+  position: inherit;
+  height: 85%;
+  margin-left: 20%;
+  text-align: center-left;
+}
+#contains:hover {
+    transform:scale(1.06);
+}
+
+#sgimg{
+  margin: 2%;
+  width: 25%;
+  height: 80%;
+  float: left;
+  margin-right: 1.5%;
+}
+
+#box{
+  height: 85%;
+  width: 18%;
+  color: #1087cc;
+  font-size: 90px;
+  margin: 3%;
+  margin-left: 1%;
+  
+  text-align: center;
+  background-color: #2b2b2b;
+}
+#contains{
+  margin-top: 3.5%;
+  //align-content: space-around;
+  height: 140px;
+  width: 100%;
+  background-color: black;
+  margin-left: 1%;
+  transform:scaleX(1);
+  transition:all 0.3s;
+}
+
+#left{
+  width: 50%;
+  height: 100%;
+  float:left;
+  padding: 0;
+  margin: 0;
+}
+
+#right{
+  width: 50%;
+  height: 100%;
+  float:right;
+  padding: 0;
+margin: 0;
+}
+
+#bod{
+  max-width: 100%;
+  padding-left: 6%;
+  padding-top: 2%;
+}
